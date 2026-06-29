@@ -67,17 +67,6 @@ function AboutPage() {
           </p>
         </div>
 
-        <div className="border-t border-border/60 pt-16 text-center">
-          <p className="font-serif text-3xl italic text-foreground">
-            ForteBethel — Capital relocation for a wider world.
-          </p>
-          <Link
-            to="/about"
-            className="mt-8 inline-block bg-foreground px-6 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90"
-          >
-            Contact us →
-          </Link>
-        </div>
       </section>
     </SiteLayout>
   );

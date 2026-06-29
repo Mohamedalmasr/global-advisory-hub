@@ -6,6 +6,7 @@ const NAV = [
   { to: "/opportunities", label: "Opportunities" },
   { to: "/process", label: "Process" },
   { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ] as const;
 
 export function SiteHeader() {
@@ -30,7 +31,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            to="/about"
+            to="/contact"
             className="border-b border-accent pb-0.5 text-sm tracking-wide text-foreground transition-colors hover:text-accent"
           >
             Contact

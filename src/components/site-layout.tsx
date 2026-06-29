@@ -15,7 +15,7 @@ export function SiteHeader() {
         <Link to="/" className="group flex items-baseline gap-2">
           <span className="font-serif text-2xl tracking-tight text-foreground">ForteBethel</span>
           <span className="hidden text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground sm:inline">
-            S.A. · Panama
+            {"\n"}
           </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">

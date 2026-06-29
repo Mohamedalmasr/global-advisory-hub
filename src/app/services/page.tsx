@@ -1,25 +1,17 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 
-export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Services — ForteBethel" },
-      {
-        name: "description",
-        content:
-          "Structured, discreet advisory across capital relocation, global mobility, and worldwide investment access.",
-      },
-      { property: "og:title", content: "Services — ForteBethel" },
-      {
-        property: "og:description",
-        content:
-          "Capital relocation, investment access, and global mobility — coordinated under Route183.",
-      },
-    ],
-  }),
-  component: ServicesPage,
-});
+export const metadata: Metadata = {
+  title: "Services — ForteBethel",
+  description:
+    "Structured, discreet advisory across capital relocation, global mobility, and worldwide investment access.",
+  openGraph: {
+    title: "Services — ForteBethel",
+    description:
+      "Capital relocation, investment access, and global mobility — coordinated under Route183.",
+  },
+};
 
 const SERVICES = [
   {
@@ -39,7 +31,7 @@ const SERVICES = [
   },
 ] as const;
 
-function ServicesPage() {
+export default function ServicesPage() {
   return (
     <SiteLayout>
       <PageHeader
@@ -65,7 +57,7 @@ function ServicesPage() {
             execution.
           </p>
           <Link
-            to="/process"
+            href="/process"
             className="mt-6 inline-block border-b border-accent pb-1 text-sm uppercase tracking-[0.22em] text-foreground hover:text-accent"
           >
             Explore Route183 →

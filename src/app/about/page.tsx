@@ -1,25 +1,16 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { Metadata } from "next";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — ForteBethel" },
-      {
-        name: "description",
-        content:
-          "ForteBethel S.A. is a Panama-based global advisory firm for internationally minded families, founders, and investors.",
-      },
-      { property: "og:title", content: "About — ForteBethel" },
-      {
-        property: "og:description",
-        content:
-          "Private, relationship-led advisory across capital relocation, jurisdictional strategy, and worldwide investment access.",
-      },
-    ],
-  }),
-  component: AboutPage,
-});
+export const metadata: Metadata = {
+  title: "About — ForteBethel",
+  description:
+    "ForteBethel S.A. is a Panama-based global advisory firm for internationally minded families, founders, and investors.",
+  openGraph: {
+    title: "About — ForteBethel",
+    description:
+      "Private, relationship-led advisory across capital relocation, jurisdictional strategy, and worldwide investment access.",
+  },
+};
 
 const SERVES = [
   "Families seeking long-term resilience and flexibility for capital and operations",
@@ -27,7 +18,7 @@ const SERVES = [
   "Investors looking for curated, vetted access to international opportunities",
 ] as const;
 
-function AboutPage() {
+export default function AboutPage() {
   return (
     <SiteLayout>
       <PageHeader
@@ -66,7 +57,6 @@ function AboutPage() {
             forward with confidence.
           </p>
         </div>
-
       </section>
     </SiteLayout>
   );

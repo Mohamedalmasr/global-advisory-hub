@@ -1,27 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿"use client";
+
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — ForteBethel" },
-      {
-        name: "description",
-        content:
-          "Get in touch with ForteBethel. Private, relationship-led advisory for capital relocation and international structuring.",
-      },
-      { property: "og:title", content: "Contact — ForteBethel" },
-      {
-        property: "og:description",
-        content:
-          "Private, relationship-led advisory for capital relocation and international structuring.",
-      },
-    ],
-  }),
-  component: ContactPage,
-});
-
-function ContactPage() {
+export default function ContactPage() {
   return (
     <SiteLayout>
       <PageHeader

@@ -18,7 +18,7 @@ function Index() {
   return (
     <SiteLayout>
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:px-10 md:pt-32 md:pb-32">
-        <div className="eyebrow">ForteBethel S.A. · Panama</div>
+        <div className="eyebrow">FORTEBETHEL{"\u00a0"}</div>
         <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-[1.05] text-foreground md:text-7xl">
           Capital relocation for a <em className="text-accent">wider world.</em>
         </h1>

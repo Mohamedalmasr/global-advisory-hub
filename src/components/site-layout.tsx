@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 const NAV = [
   { to: "/services", label: "Services" },
@@ -12,12 +13,13 @@ const NAV = [
 export function SiteHeader() {
   return (
     <header className="border-b border-border/60">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 md:px-10">
-        <Link to="/" className="group flex items-baseline gap-2">
-          <span className="font-serif text-2xl tracking-tight text-foreground">ForteBethel</span>
-          <span className="hidden text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground sm:inline">
-            {"\n"}
-          </span>
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10">
+        <Link to="/" className="group">
+          <img
+            src={logoAsset.url}
+            alt="ForteBethel"
+            className="h-12 w-auto object-contain md:h-14"
+          />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {NAV.map((item) => (
@@ -48,7 +50,11 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-6 py-12 md:px-10">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <div className="font-serif text-xl">ForteBethel</div>
+            <img
+              src={logoAsset.url}
+              alt="ForteBethel"
+              className="h-10 w-auto object-contain"
+            />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
               Capital relocation for a wider world. Private, relationship-led advisory.
             </p>

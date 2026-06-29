@@ -44,22 +44,21 @@ export default function ProcessPage() {
         intro="From first conversation to structured direction. Our process is built around discretion, clarity, and disciplined decision-making at every stage."
       />
       <section className="mx-auto max-w-3xl px-6 md:px-10">
-        <ol className="relative border-l border-border/60 pl-10">
-          {STEPS.map((s) => (
-            <li key={s.n} className="relative pb-14 last:pb-0">
-              <span className="absolute -left-[5px] top-2 h-2 w-2 rounded-full bg-accent" />
-              <div className="eyebrow">{s.n}</div>
-              <h2 className="mt-3 font-serif text-3xl text-foreground">{s.title}</h2>
-              <p className="mt-3 leading-relaxed text-muted-foreground">{s.body}</p>
+        <ol className="relative">
+          {STEPS.map((s, i) => (
+            <li key={s.n} className="grid grid-cols-[1px_1fr] gap-0 pb-14 last:pb-0">
+              <div className="relative flex justify-center">
+                <div className="h-full w-px bg-border/60" />
+                <span className="absolute top-0 z-10 h-2 w-2 rounded-full bg-accent" />
+              </div>
+              <div className="pl-6">
+                <span className="eyebrow">{s.n}</span>
+                <h2 className="mt-1 font-serif text-3xl text-foreground">{s.title}</h2>
+                <p className="mt-2 leading-relaxed text-muted-foreground">{s.body}</p>
+              </div>
             </li>
           ))}
         </ol>
-        <div className="border-t border-border/60 py-16 text-center">
-          <p className="font-serif text-2xl italic text-foreground">
-            Each step is private, relationship-led, and tailored — no two engagements follow an
-            identical path.
-          </p>
-        </div>
       </section>
     </SiteLayout>
   );

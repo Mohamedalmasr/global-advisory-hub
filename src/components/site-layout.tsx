@@ -1,6 +1,8 @@
-import { Link } from "@tanstack/react-router";
+﻿"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
-import logoAsset from "@/assets/logo.png.asset.json";
 
 const NAV = [
   { to: "/services", label: "Services" },
@@ -11,29 +13,30 @@ const NAV = [
 ] as const;
 
 export function SiteHeader() {
+  const pathname = usePathname();
+
   return (
     <header className="border-b border-border/60">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10">
-        <Link to="/" className="group">
-          <img
-            src={logoAsset.url}
-            alt="ForteBethel"
-            className="h-12 w-auto object-contain md:h-14"
-          />
+        <Link href="/" className="group">
+          <img src="/logo.png" alt="ForteBethel" className="h-12 w-auto object-contain md:h-14" />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {NAV.map((item) => (
             <Link
               key={item.to}
-              to={item.to}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-              activeProps={{ className: "text-sm text-foreground" }}
+              href={item.to}
+              className={
+                pathname === item.to
+                  ? "text-sm text-foreground"
+                  : "text-sm text-muted-foreground transition-colors hover:text-foreground"
+              }
             >
               {item.label}
             </Link>
           ))}
           <Link
-            to="/contact"
+            href="/contact"
             className="border-b border-accent pb-0.5 text-sm tracking-wide text-foreground transition-colors hover:text-accent"
           >
             Contact
@@ -50,11 +53,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-6 py-12 md:px-10">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <img
-              src={logoAsset.url}
-              alt="ForteBethel"
-              className="h-10 w-auto object-contain"
-            />
+            <img src="/logo.png" alt="ForteBethel" className="h-10 w-auto object-contain" />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
               Capital relocation for a wider world. Private, relationship-led advisory.
             </p>
@@ -64,7 +63,7 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-2 text-sm">
               {NAV.map((item) => (
                 <li key={item.to}>
-                  <Link to={item.to} className="text-muted-foreground hover:text-foreground">
+                  <Link href={item.to} className="text-muted-foreground hover:text-foreground">
                     {item.label}
                   </Link>
                 </li>
@@ -91,8 +90,11 @@ export function SiteFooter() {
 
 export function Breadcrumb({ current }: { current: string }) {
   return (
-    <nav aria-label="Breadcrumb" className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
-      <Link to="/" className="hover:text-foreground">
+    <nav
+      aria-label="Breadcrumb"
+      className="text-xs uppercase tracking-[0.22em] text-muted-foreground"
+    >
+      <Link href="/" className="hover:text-foreground">
         Home
       </Link>
       <span className="mx-3 text-border">|</span>

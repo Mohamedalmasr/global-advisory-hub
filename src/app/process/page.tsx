@@ -1,25 +1,16 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { Metadata } from "next";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 
-export const Route = createFileRoute("/process")({
-  head: () => ({
-    meta: [
-      { title: "Process — Engagement Path | ForteBethel" },
-      {
-        name: "description",
-        content:
-          "From first conversation to structured direction — a discreet, disciplined engagement path under Route183.",
-      },
-      { property: "og:title", content: "Process — Engagement Path | ForteBethel" },
-      {
-        property: "og:description",
-        content:
-          "Discovery, mapping, selection, execution — coordinated with discretion and clarity.",
-      },
-    ],
-  }),
-  component: ProcessPage,
-});
+export const metadata: Metadata = {
+  title: "Process — Engagement Path | ForteBethel",
+  description:
+    "From first conversation to structured direction — a discreet, disciplined engagement path under Route183.",
+  openGraph: {
+    title: "Process — Engagement Path | ForteBethel",
+    description:
+      "Discovery, mapping, selection, execution — coordinated with discretion and clarity.",
+  },
+};
 
 const STEPS = [
   {
@@ -44,7 +35,7 @@ const STEPS = [
   },
 ] as const;
 
-function ProcessPage() {
+export default function ProcessPage() {
   return (
     <SiteLayout>
       <PageHeader

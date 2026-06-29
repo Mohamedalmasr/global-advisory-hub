@@ -1,25 +1,16 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 
-export const Route = createFileRoute("/opportunities")({
-  head: () => ({
-    meta: [
-      { title: "Opportunities — ForteBethel" },
-      {
-        name: "description",
-        content:
-          "A curated view of worldwide investment opportunities, reviewed with discretion and connected to real execution pathways under Route183.",
-      },
-      { property: "og:title", content: "Opportunities — ForteBethel" },
-      {
-        property: "og:description",
-        content:
-          "Cross-border opportunities reviewed privately, vetted with a practical lens.",
-      },
-    ],
-  }),
-  component: OpportunitiesPage,
-});
+export const metadata: Metadata = {
+  title: "Opportunities — ForteBethel",
+  description:
+    "A curated view of worldwide investment opportunities, reviewed with discretion and connected to real execution pathways under Route183.",
+  openGraph: {
+    title: "Opportunities — ForteBethel",
+    description: "Cross-border opportunities reviewed privately, vetted with a practical lens.",
+  },
+};
 
 const FOCUS = [
   "Cross-border investment themes across multiple regions and asset classes",
@@ -27,7 +18,7 @@ const FOCUS = [
   "Access points typically unavailable through conventional channels",
 ] as const;
 
-function OpportunitiesPage() {
+export default function OpportunitiesPage() {
   return (
     <SiteLayout>
       <PageHeader
@@ -52,8 +43,8 @@ function OpportunitiesPage() {
           <div className="eyebrow">Our approach</div>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             ForteBethel does not list opportunities publicly. Each opportunity is reviewed in the
-            context of a client's broader objectives — capital structure, mobility goals, and risk
-            posture — before being introduced privately.
+            context of a client&apos;s broader objectives — capital structure, mobility goals, and
+            risk posture — before being introduced privately.
           </p>
         </div>
 
@@ -62,7 +53,7 @@ function OpportunitiesPage() {
             Opportunity access begins with a confidential conversation, not a catalog.
           </p>
           <Link
-            to="/about"
+            href="/about"
             className="mt-8 inline-block bg-foreground px-6 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90"
           >
             Start a private discussion →

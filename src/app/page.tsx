@@ -1,20 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Link } from "@tanstack/react-router";
+﻿import Link from "next/link";
 import { SiteLayout } from "@/components/site-layout";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "ForteBethel — Capital Relocation for a Wider World" },
-      { name: "description", content: "Panama-based global advisory for capital relocation, global mobility, and worldwide investment access. Discreet, structured, relationship-led." },
-      { property: "og:title", content: "ForteBethel — Capital Relocation for a Wider World" },
-      { property: "og:description", content: "Private advisory across capital relocation, jurisdictional strategy, and worldwide investment opportunities." },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function HomePage() {
   return (
     <SiteLayout>
       <section className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:px-10 md:pt-32 md:pb-32">
@@ -29,13 +16,13 @@ function Index() {
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
-            to="/about"
+            href="/about"
             className="inline-flex items-center bg-foreground px-6 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90"
           >
             Begin a private conversation
           </Link>
           <Link
-            to="/process"
+            href="/process"
             className="inline-flex items-center border border-border px-6 py-3 text-sm tracking-wide text-foreground transition-colors hover:border-foreground"
           >
             Explore Route183 →
@@ -67,15 +54,13 @@ function Index() {
           ].map((c) => (
             <Link
               key={c.n}
-              to={c.to}
+              href={c.to}
               className="group bg-background p-10 transition-colors hover:bg-secondary"
             >
               <div className="eyebrow">{c.n}</div>
               <h3 className="mt-4 font-serif text-2xl text-foreground">{c.t}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.d}</p>
-              <div className="mt-6 text-xs uppercase tracking-[0.22em] text-accent">
-                Explore →
-              </div>
+              <div className="mt-6 text-xs uppercase tracking-[0.22em] text-accent">Explore →</div>
             </Link>
           ))}
         </div>

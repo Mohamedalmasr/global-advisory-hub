@@ -83,5 +83,3 @@ function Index() {
     </SiteLayout>
   );
 }
-  );
-}

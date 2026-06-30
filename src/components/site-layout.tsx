@@ -22,7 +22,7 @@ export function SiteHeader() {
           <img src="/logo.png" alt="ForteBethel" className="h-12 w-auto object-contain md:h-14" />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
-          {NAV.map((item) => (
+          {NAV.filter((item) => item.to !== "/contact").map((item) => (
             <Link
               key={item.to}
               href={item.to}
@@ -36,8 +36,22 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
+            href="/privacy"
+            className={
+              pathname === "/privacy"
+                ? "text-sm text-foreground"
+                : "text-sm text-muted-foreground transition-colors hover:text-foreground"
+            }
+          >
+            Privacy
+          </Link>
+          <Link
             href="/contact"
-            className="border-b border-accent pb-0.5 text-sm tracking-wide text-foreground transition-colors hover:text-accent"
+            className={
+              pathname === "/contact"
+                ? "text-sm text-foreground"
+                : "text-sm text-muted-foreground transition-colors hover:text-foreground"
+            }
           >
             Contact
           </Link>
@@ -51,7 +65,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-32 border-t border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-12 md:px-10">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-4">
           <div>
             <img src="/logo.png" alt="ForteBethel" className="h-10 w-auto object-contain" />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
@@ -68,6 +82,16 @@ export function SiteFooter() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+          <div>
+            <div className="eyebrow">About us</div>
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>
+                <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
+                  Privacy
+                </Link>
+              </li>
             </ul>
           </div>
           <div>

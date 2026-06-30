@@ -48,15 +48,6 @@ export default function AboutPage() {
             consulting.
           </p>
         </div>
-
-        <div>
-          <div className="eyebrow">Route183</div>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Route183 is our owned pathway — a disciplined framework for identifying the right
-            destination, understanding the structure, selecting the right partners, and moving
-            forward with confidence.
-          </p>
-        </div>
       </section>
     </SiteLayout>
   );

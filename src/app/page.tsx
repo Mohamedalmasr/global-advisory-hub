@@ -21,12 +21,6 @@ export default function HomePage() {
           >
             Begin a private conversation
           </Link>
-          <Link
-            href="/process"
-            className="inline-flex items-center border border-border px-6 py-3 text-sm tracking-wide text-foreground transition-colors hover:border-foreground"
-          >
-            Explore Route183 →
-          </Link>
         </div>
       </section>
 

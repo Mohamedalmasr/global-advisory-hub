@@ -1,6 +1,7 @@
 ﻿import { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
+import ReactCountryFlag from "react-country-flag";
 import {
   Select,
   SelectContent,
@@ -19,12 +20,6 @@ export const metadata: Metadata = {
   },
 };
 
-const FOCUS = [
-  "Cross-border investment themes across multiple regions and asset classes",
-  "Opportunities aligned with relocation, residency, or jurisdictional strategy",
-  "Access points typically unavailable through conventional channels",
-] as const;
-
 export default function OpportunitiesPage() {
   return (
     <SiteLayout>
@@ -35,30 +30,18 @@ export default function OpportunitiesPage() {
       />
       <section className="mx-auto max-w-3xl px-6 md:px-10">
         <div className="border-y border-border/60 py-12">
-          <div className="eyebrow">What we look at</div>
-          <ul className="mt-8 space-y-6">
-            {FOCUS.map((item) => (
-              <li key={item} className="flex gap-5">
-                <span className="mt-2 h-px w-6 flex-shrink-0 bg-accent" />
-                <span className="text-lg leading-relaxed text-foreground">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="border-y border-border/60 py-12">
           <div className="eyebrow">Countries</div>
           <ul className="mt-8 space-y-4">
-            <li className="flex gap-5">
-              <span className="mt-2 h-px w-6 flex-shrink-0 bg-accent" />
+            <li className="flex gap-5 items-center">
+              <ReactCountryFlag countryCode="US" svg style={{ width: 20, height: 15 }} />
               <span className="text-lg text-foreground">USA</span>
             </li>
-            <li className="flex gap-5">
-              <span className="mt-2 h-px w-6 flex-shrink-0 bg-accent" />
+            <li className="flex gap-5 items-center">
+              <ReactCountryFlag countryCode="CA" svg style={{ width: 20, height: 15 }} />
               <span className="text-lg text-foreground">Canada</span>
             </li>
-            <li className="flex gap-5">
-              <span className="mt-2 h-px w-6 flex-shrink-0 bg-accent" />
+            <li className="flex gap-5 items-center">
+              <ReactCountryFlag countryCode="PA" svg style={{ width: 20, height: 15 }} />
               <span className="text-lg text-foreground">Panama</span>
             </li>
           </ul>
@@ -72,9 +55,24 @@ export default function OpportunitiesPage() {
                 <SelectValue placeholder="Select a country" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="usa">USA</SelectItem>
-                <SelectItem value="canada">Canada</SelectItem>
-                <SelectItem value="panama">Panama</SelectItem>
+                <SelectItem value="usa">
+                  <span className="flex items-center gap-2">
+                    <ReactCountryFlag countryCode="US" svg style={{ width: 18, height: 13 }} />
+                    USA
+                  </span>
+                </SelectItem>
+                <SelectItem value="canada">
+                  <span className="flex items-center gap-2">
+                    <ReactCountryFlag countryCode="CA" svg style={{ width: 18, height: 13 }} />
+                    Canada
+                  </span>
+                </SelectItem>
+                <SelectItem value="panama">
+                  <span className="flex items-center gap-2">
+                    <ReactCountryFlag countryCode="PA" svg style={{ width: 18, height: 13 }} />
+                    Panama
+                  </span>
+                </SelectItem>
               </SelectContent>
             </Select>
           </div>

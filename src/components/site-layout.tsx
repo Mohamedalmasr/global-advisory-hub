@@ -17,7 +17,7 @@ export function SiteHeader() {
 
   return (
     <header className="border-b border-border/60">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10">
+      <div className="mx-auto flex max-w-6xl items-center justify-start gap-12 px-6 py-5 md:px-10">
         <Link href="/" className="group">
           <img src="/logo.png" alt="ForteBethel" className="h-12 w-auto object-contain md:h-14" />
         </Link>
@@ -35,16 +35,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link
-            href="/privacy"
-            className={
-              pathname === "/privacy"
-                ? "text-sm text-foreground"
-                : "text-sm text-muted-foreground transition-colors hover:text-foreground"
-            }
-          >
-            Privacy
-          </Link>
           <Link
             href="/contact"
             className={

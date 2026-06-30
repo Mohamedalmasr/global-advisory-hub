@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next";
-import Link from "next/link";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 
 export const metadata: Metadata = {
@@ -50,18 +49,6 @@ export default function ServicesPage() {
               </div>
             </article>
           ))}
-        </div>
-        <div className="py-16 text-center">
-          <p className="text-lg italic text-muted-foreground">
-            Every service connects into Route183 — our structured pathway from first conversation to
-            execution.
-          </p>
-          <Link
-            href="/process"
-            className="mt-6 inline-block border-b border-accent pb-1 text-sm uppercase tracking-[0.22em] text-foreground hover:text-accent"
-          >
-            Explore Route183 →
-          </Link>
         </div>
       </section>
     </SiteLayout>

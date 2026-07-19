@@ -14,4 +14,5 @@ export interface Opportunity {
   sector: string;
   title: string;
   price: number;
+  description: string;
 }

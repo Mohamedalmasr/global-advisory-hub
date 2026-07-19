@@ -5,7 +5,8 @@
     "state": "New York",
     "sector": "Finance & Banking",
     "title": "Regional Bank Acquisition — Tri-State Area",
-    "price": 45000000
+    "price": 45000000,
+    "description": "Acquisition opportunity targeting a well-established regional bank operating across the New York, New Jersey, and Connecticut tri-state area. The institution holds a diversified loan portfolio with strong commercial lending metrics and a loyal deposit base. This opportunity is suited for investors seeking controlled growth in a mature banking market with regulatory clarity."
   },
   {
     "ref": "FB-US-002",
@@ -13,7 +14,8 @@
     "state": "Florida",
     "sector": "Finance & Banking",
     "title": "Private Wealth Management Platform",
-    "price": 12000000
+    "price": 12000000,
+    "description": "A boutique private wealth management firm based in South Florida, serving high-net-worth individuals and family offices. The platform manages advisory mandates across equities, fixed income, and alternative investments. Ideal for those seeking a foothold in the growing Florida wealth management corridor with an existing client book and compliance infrastructure."
   },
   {
     "ref": "FB-CA-001",
@@ -21,7 +23,8 @@
     "state": "Ontario",
     "sector": "Finance & Banking",
     "title": "Fintech Lending Portfolio — Ontario",
-    "price": 8500000
+    "price": 8500000,
+    "description": "A technology-driven lending platform operating in Ontario, specializing in small business and consumer credit. The portfolio demonstrates strong underwriting performance and digital-first customer acquisition. This opportunity appeals to investors interested in Canadian fintech expansion with scalable infrastructure and regulatory alignment."
   },
   {
     "ref": "FB-CA-002",
@@ -29,7 +32,8 @@
     "state": "British Columbia",
     "sector": "Finance & Banking",
     "title": "Credit Union Expansion — Western Canada",
-    "price": 15000000
+    "price": 15000000,
+    "description": "Growth capital opportunity for a credit union cooperative seeking to expand its footprint across British Columbia and western Canada. The institution serves a member-owned model with strong community ties and stable deposit growth. Suitable for impact-minded investors aligned with cooperative financial structures."
   },
   {
     "ref": "FB-PA-001",
@@ -37,7 +41,8 @@
     "state": "Panamá",
     "sector": "Finance & Banking",
     "title": "Offshore Banking License Opportunity",
-    "price": 22000000
+    "price": 22000000,
+    "description": "A rare opportunity to participate in the establishment or acquisition of an offshore banking license in Panama's regulated financial sector. The jurisdiction offers a robust legal framework, dollarized economy, and strategic positioning as a hemispheric financial hub. This is a strategic entry point for institutions seeking Latin American banking presence."
   },
   {
     "ref": "RE-US-001",
@@ -45,7 +50,8 @@
     "state": "Texas",
     "sector": "Real Estate",
     "title": "Multifamily Portfolio — Austin Metro",
-    "price": 32000000
+    "price": 32000000,
+    "description": "A multifamily residential portfolio located in the greater Austin metropolitan area, one of the fastest-growing regions in the United States. The portfolio includes Class A and B apartment communities with strong occupancy rates and embedded rent growth potential. Well-suited for investors seeking exposure to Texas's continued population and employment expansion."
   },
   {
     "ref": "RE-US-002",
@@ -53,7 +59,8 @@
     "state": "California",
     "sector": "Real Estate",
     "title": "Mixed-Use Development — Los Angeles",
-    "price": 78000000
+    "price": 78000000,
+    "description": "A mixed-use development project in a high-demand Los Angeles submarket, combining luxury residential units with ground-floor retail and creative office space. The project benefits from transit-oriented zoning and strong pre-leasing interest. A compelling opportunity for institutional capital seeking West Coast urban real estate exposure."
   },
   {
     "ref": "RE-US-003",
@@ -61,7 +68,8 @@
     "state": "Colorado",
     "sector": "Real Estate",
     "title": "Mountain Resort Property — Aspen Area",
-    "price": 19500000
+    "price": 19500000,
+    "description": "A premium resort property situated near Aspen, Colorado, offering ski-in access and panoramic mountain views. The asset includes hospitality and residential components with year-round revenue potential. Ideal for investors seeking a trophy asset in one of North America's most exclusive mountain destinations."
   },
   {
     "ref": "RE-CA-001",
@@ -69,7 +77,8 @@
     "state": "British Columbia",
     "sector": "Real Estate",
     "title": "Waterfront Condos — Vancouver",
-    "price": 41000000
+    "price": 41000000,
+    "description": "A waterfront condominium development in Vancouver's expanding harbor district. The project offers premium residential units with ocean views, proximity to transit, and alignment with the city's long-term urban revitalization plans. Attractive to investors targeting Vancouver's constrained housing supply and international demand."
   },
   {
     "ref": "RE-CA-002",
@@ -77,7 +86,8 @@
     "state": "Quebec",
     "sector": "Real Estate",
     "title": "Historic Building Restoration — Montreal",
-    "price": 9800000
+    "price": 980000,
+    "description": "A heritage restoration project in downtown Montreal, converting a historic commercial building into boutique office and retail space. The project leverages Quebec's heritage tax incentives and Montreal's growing creative economy. Suitable for investors with an interest in cultural preservation and urban revitalization."
   },
   {
     "ref": "RE-PA-001",
@@ -85,7 +95,8 @@
     "state": "Panamá",
     "sector": "Real Estate",
     "title": "Luxury Tower — Punta Pacífica",
-    "price": 28000000
+    "price": 28000000,
+    "description": "A luxury residential tower in Panama City's Punta Pacífica district, one of Latin America's most prominent waterfront neighborhoods. The development targets the upper tier of the Panama real estate market with ocean-facing units and premium amenities. A strong fit for investors seeking dollar-denominated real assets in a stable jurisdiction."
   },
   {
     "ref": "RE-PA-002",
@@ -93,7 +104,8 @@
     "state": "Panamá Oeste",
     "sector": "Real Estate",
     "title": "Beachfront Resort Development — Playa Blanca",
-    "price": 15000000
+    "price": 1500000,
+    "description": "A beachfront resort development on the Pacific coast of Panama, positioned along the growing tourism corridor of Playa Blanca. The project includes hotel suites, private villas, and marina access. This opportunity caters to investors interested in Central American tourism growth and coastal real estate development."
   },
   {
     "ref": "TE-US-001",
@@ -101,7 +113,8 @@
     "state": "California",
     "sector": "Technology",
     "title": "AI Startup Seed Round — Silicon Valley",
-    "price": 5000000
+    "price": 5000000,
+    "description": "A seed-stage investment in an artificial intelligence startup based in Silicon Valley, focused on enterprise automation solutions. The founding team brings deep technical expertise and early traction with pilot customers. An early-entry opportunity for investors seeking exposure to the AI infrastructure stack."
   },
   {
     "ref": "TE-US-002",
@@ -109,7 +122,8 @@
     "state": "New York",
     "sector": "Technology",
     "title": "SaaS Enterprise Platform — Series B",
-    "price": 18000000
+    "price": 18000000,
+    "description": "A Series B investment in a B2B SaaS platform headquartered in New York, serving enterprise clients in the financial services sector. The platform demonstrates strong annual recurring revenue growth and low churn. Well-suited for growth-stage investors targeting enterprise software with proven market fit."
   },
   {
     "ref": "TE-CA-001",
@@ -117,7 +131,8 @@
     "state": "Ontario",
     "sector": "Technology",
     "title": "CleanTech Innovation Hub — Toronto",
-    "price": 7200000
+    "price": 7200000,
+    "description": "An investment opportunity in a Toronto-based cleantech accelerator and innovation hub, supporting early-stage companies in clean energy, carbon reduction, and sustainable manufacturing. The hub offers co-investment structures and access to Canada's growing clean technology ecosystem."
   },
   {
     "ref": "TE-CA-002",
@@ -125,7 +140,8 @@
     "state": "Alberta",
     "sector": "Technology",
     "title": "AgriTech Platform — Prairie Expansion",
-    "price": 4500000
+    "price": 4500000,
+    "description": "Agricultural technology platform expanding across the Canadian prairies, providing precision farming tools and data analytics to large-scale crop operations. The platform addresses productivity challenges in Alberta's agricultural sector. An opportunity for investors aligned with food systems innovation and rural technology adoption."
   },
   {
     "ref": "TE-PA-001",
@@ -133,7 +149,8 @@
     "state": "Panamá",
     "sector": "Technology",
     "title": "Logistics Tech Startup — Panamá City",
-    "price": 3200000
+    "price": 3200000,
+    "description": "A logistics technology startup based in Panama City, leveraging the country's strategic position as a global transit and shipping hub. The platform digitizes freight forwarding and customs brokerage processes across Latin America. Ideal for investors seeking technology exposure tied to Panama's logistics infrastructure advantage."
   },
   {
     "ref": "EI-US-001",
@@ -141,7 +158,8 @@
     "state": "Texas",
     "sector": "Energy & Infrastructure",
     "title": "Solar Farm Portfolio — West Texas",
-    "price": 55000000
+    "price": 55000000,
+    "description": "A portfolio of utility-scale solar farms located in West Texas, benefiting from high solar irradiance and access to the ERCOT power grid. The assets include long-term power purchase agreements with creditworthy off-takers. A compelling opportunity for investors seeking stable, inflation-linked energy infrastructure returns."
   },
   {
     "ref": "EI-US-002",
@@ -149,7 +167,8 @@
     "state": "Louisiana",
     "sector": "Energy & Infrastructure",
     "title": "LNG Terminal Expansion — Gulf Coast",
-    "price": 120000000
+    "price": 120000000,
+    "description": "An expansion project at an existing LNG terminal along the U.S. Gulf Coast, increasing liquefaction capacity to meet growing global demand for natural gas. The project is supported by long-term offtake contracts and favorable permitting conditions. A large-scale infrastructure opportunity for institutional energy investors."
   },
   {
     "ref": "EI-CA-001",
@@ -157,7 +176,8 @@
     "state": "Alberta",
     "sector": "Energy & Infrastructure",
     "title": "Hydrogen Production Facility — Alberta",
-    "price": 67000000
+    "price": 67000000,
+    "description": "A green hydrogen production facility in Alberta, Canada, leveraging the province's existing energy infrastructure and renewable resources. The project targets industrial and transportation sectors seeking low-carbon fuel alternatives. Positioned at the forefront of Canada's hydrogen economy strategy."
   },
   {
     "ref": "EI-CA-002",
@@ -165,7 +185,8 @@
     "state": "Saskatchewan",
     "sector": "Energy & Infrastructure",
     "title": "Wind Energy Farm — Prairie Region",
-    "price": 34000000
+    "price": 34000000,
+    "description": "A utility-scale wind energy project in Saskatchewan's prairie region, offering strong wind resources and proximity to provincial grid connections. The project is structured with power purchase agreements and federal clean energy incentives. Suitable for investors targeting renewable energy infrastructure in Canada."
   },
   {
     "ref": "EI-PA-001",
@@ -173,7 +194,8 @@
     "state": "Chiriquí",
     "sector": "Energy & Infrastructure",
     "title": "Hydroelectric Power Plant — Chiriquí",
-    "price": 25000000
+    "price": 25000000,
+    "description": "A hydroelectric power generation facility in Panama's Chiriquí province, utilizing the region's river systems and elevation gradients. The plant contributes to Panama's renewable energy mix and benefits from government-backed energy purchase guarantees. A infrastructure investment aligned with Central America's clean energy transition."
   },
   {
     "ref": "AG-US-001",
@@ -181,7 +203,8 @@
     "state": "Iowa",
     "sector": "Agriculture",
     "title": "Farmland Portfolio — Midwest Corridor",
-    "price": 28000000
+    "price": 28000000,
+    "description": "A diversified farmland portfolio across Iowa and the Midwest corridor, encompassing high-quality cropland with established tenant relationships. The portfolio generates stable cash yields with long-term land appreciation potential. Ideal for investors seeking tangible asset exposure with inflation-hedging characteristics."
   },
   {
     "ref": "AG-US-002",
@@ -189,7 +212,8 @@
     "state": "California",
     "sector": "Agriculture",
     "title": "Organic Vineyard Expansion — Napa Valley",
-    "price": 14000000
+    "price": 14000000,
+    "description": "An expansion opportunity within an established organic vineyard operation in Napa Valley, California. The project includes additional acreage, updated irrigation systems, and direct-to-consumer sales channels. Suported by strong demand for premium organic wines and Napa's global brand recognition."
   },
   {
     "ref": "AG-CA-001",
@@ -197,7 +221,8 @@
     "state": "Saskatchewan",
     "sector": "Agriculture",
     "title": "Canola & Wheat Operations — Saskatchewan",
-    "price": 11000000
+    "price": 11000000,
+    "description": "Large-scale canola and wheat farming operations in Saskatchewan, one of Canada's most productive agricultural regions. The operations include modern equipment, grain storage, and established export relationships. A solid opportunity for investors seeking Canadian agricultural commodity exposure with operational scale."
   },
   {
     "ref": "AG-CA-002",
@@ -205,7 +230,8 @@
     "state": "Manitoba",
     "sector": "Agriculture",
     "title": "Pulse Crop Export Business — Manitoba",
-    "price": 6500000
+    "price": 6500000,
+    "description": "An export-oriented pulse crop business based in Manitoba, specializing in lentils, peas, and chickpeas for international markets. The business benefits from Canada's position as a leading pulse exporter and growing global demand for plant-based proteins. Suitable for investors interested in agricultural trade and food security themes."
   },
   {
     "ref": "AG-PA-001",
@@ -213,7 +239,8 @@
     "state": "Chiriquí",
     "sector": "Agriculture",
     "title": "Banana Plantation & Export — Chiriquí",
-    "price": 4800000
+    "price": 4800000,
+    "description": "A commercial banana plantation and export operation in Panama's Chiriquí province, the country's primary agricultural region. The operation includes cultivated acreage, packing facilities, and established distribution channels to North American markets. An opportunity for investors seeking Central American agricultural production assets."
   },
   {
     "ref": "AG-PA-002",
@@ -221,6 +248,7 @@
     "state": "Veraguas",
     "sector": "Agriculture",
     "title": "Sustainable Cacao Farm — Veraguas",
-    "price": 2200000
+    "price": 2200000,
+    "description": "A sustainable cacao farming operation in Panama's Veraguas province, producing fine-flavor cacao for the premium chocolate market. The farm employs organic practices and maintains direct relationships with specialty chocolate makers. A niche agricultural opportunity combining sustainability with high-value crop production."
   }
 ]

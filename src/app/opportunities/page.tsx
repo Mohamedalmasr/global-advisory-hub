@@ -182,8 +182,9 @@ export default function OpportunitiesPage() {
 
         <div ref={cardsRef} className="space-y-3 pt-4 pb-8 md:space-y-4 md:pt-8 md:pb-12">
           {filtered.map((item) => (
-            <div
+            <Link
               key={item.ref}
+              href={`/opportunities/${item.ref}`}
               className="flex flex-col border border-border/60 px-4 py-4 transition-colors hover:bg-muted/50 md:flex-row md:items-center md:justify-between md:px-6 md:py-5"
             >
               <div className="flex flex-col gap-1">
@@ -211,7 +212,7 @@ export default function OpportunitiesPage() {
                   {formatPrice(item.price)}
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

@@ -2,8 +2,6 @@
 
 const nextConfig: NextConfig = {
   devIndicators: false,
-  output: "export",
-  distDir: "out",
 };
 
 export default nextConfig;

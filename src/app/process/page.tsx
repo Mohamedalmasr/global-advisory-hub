@@ -46,14 +46,14 @@ export default function ProcessPage() {
       <section className="mx-auto max-w-3xl px-6 md:px-10">
         <ol className="relative">
           {STEPS.map((s, i) => (
-            <li key={s.n} className="grid grid-cols-[1px_1fr] gap-0 pb-14 last:pb-0">
+            <li key={s.n} className="grid grid-cols-[1px_1fr] gap-0 pb-10 last:pb-0 md:pb-14">
               <div className="relative flex justify-center">
                 <div className="h-full w-px bg-border/60" />
                 <span className="absolute top-0 z-10 h-2 w-2 rounded-full bg-accent" />
               </div>
-              <div className="pl-6">
+              <div className="pl-5 md:pl-6">
                 <span className="eyebrow">{s.n}</span>
-                <h2 className="mt-1 font-serif text-3xl text-foreground">{s.title}</h2>
+                <h2 className="mt-1 font-serif text-2xl text-foreground md:text-3xl">{s.title}</h2>
                 <p className="mt-2 leading-relaxed text-muted-foreground">{s.body}</p>
               </div>
             </li>

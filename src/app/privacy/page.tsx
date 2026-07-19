@@ -112,8 +112,8 @@ export default function PrivacyPage() {
         title="Privacy Policy"
         intro="ForteBethel SA respects your privacy and is committed to keeping your personal information safe, limited, and protected."
       />
-      <section className="mx-auto max-w-3xl space-y-12 px-6 pb-20 md:px-10">
-        <p className="text-lg leading-relaxed text-muted-foreground">
+      <section className="mx-auto max-w-3xl space-y-8 px-6 pb-16 md:space-y-12 md:pb-20 md:px-10">
+        <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
           This Privacy Policy explains what information we collect, how we use it, how we store it,
           and how we may share it when assisting you with documentation, relocation, investment, or
           related services.
@@ -121,12 +121,14 @@ export default function PrivacyPage() {
 
         {SECTIONS.map((s) => (
           <div key={s.title}>
-            <h2 className="font-serif text-2xl text-foreground">{s.title}</h2>
-            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{s.body}</p>
+            <h2 className="font-serif text-xl text-foreground md:text-2xl">{s.title}</h2>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground md:mt-4 md:text-lg">
+              {s.body}
+            </p>
             {s.items && (
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-3 space-y-2 md:mt-4">
                 {s.items.map((item) => (
-                  <li key={item} className="flex gap-3 text-lg text-muted-foreground">
+                  <li key={item} className="flex gap-3 text-base text-muted-foreground md:text-lg">
                     <span className="mt-2 h-px w-4 flex-shrink-0 bg-accent" />
                     <span>{item}</span>
                   </li>
@@ -134,9 +136,9 @@ export default function PrivacyPage() {
               </ul>
             )}
             {s.after && (
-              <div className="mt-4 space-y-4">
+              <div className="mt-3 space-y-3 md:mt-4 md:space-y-4">
                 {s.after.split("\n\n").map((para, i) => (
-                  <p key={i} className="text-lg leading-relaxed text-muted-foreground">
+                  <p key={i} className="text-base leading-relaxed text-muted-foreground md:text-lg">
                     {para.split("\n").map((line, j) => (
                       <span key={j}>
                         {j > 0 && <br />}
@@ -150,7 +152,7 @@ export default function PrivacyPage() {
           </div>
         ))}
 
-        <p className="pt-6 text-sm text-muted-foreground">Last updated: 2026-03-13</p>
+        <p className="pt-4 text-sm text-muted-foreground md:pt-6">Last updated: 2026-03-13</p>
       </section>
     </SiteLayout>
   );

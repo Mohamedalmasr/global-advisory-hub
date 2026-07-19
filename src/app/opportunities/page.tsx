@@ -79,12 +79,12 @@ export default function OpportunitiesPage() {
         title="Opportunities"
         intro="A curated view of worldwide investment opportunities — reviewed with discretion, vetted with a practical lens, and connected to real execution pathways."
       />
-      <section className="mx-auto max-w-5xl px-6 md:px-10">
-        <div className="sticky top-16 z-20 border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="grid gap-6 py-8 md:grid-cols-3">
+      <section className="mx-auto max-w-5xl px-4 md:px-6 lg:px-10">
+        <div className="sticky top-0 z-20 border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="grid gap-4 py-4 md:grid-cols-3 md:gap-6 md:py-8">
             <div>
               <div className="eyebrow">By Country</div>
-              <div className="mt-4 flex items-center gap-2">
+              <div className="mt-3 flex items-center gap-2 md:mt-4">
                 <Select
                   value={selectedCountry ?? "all"}
                   onValueChange={(v) => {
@@ -118,7 +118,7 @@ export default function OpportunitiesPage() {
             {selectedCountry && states.length > 0 && (
               <div>
                 <div className="eyebrow">By State</div>
-                <div className="mt-4 flex items-center gap-2">
+                <div className="mt-3 flex items-center gap-2 md:mt-4">
                   <Select
                     value={selectedState ?? "all"}
                     onValueChange={(v) => {
@@ -144,7 +144,7 @@ export default function OpportunitiesPage() {
 
             <div>
               <div className="eyebrow">By Sector</div>
-              <div className="mt-4 flex items-center gap-2">
+              <div className="mt-3 flex items-center gap-2 md:mt-4">
                 <Select
                   value={selectedSector ?? "all"}
                   onValueChange={(v) => {
@@ -170,7 +170,7 @@ export default function OpportunitiesPage() {
         </div>
 
         {hasFilters && (
-          <div className="flex items-center justify-between pb-8">
+          <div className="flex items-center justify-between py-4 md:pb-8">
             <p className="text-sm text-muted-foreground">
               {filtered.length} {filtered.length === 1 ? "opportunity" : "opportunities"} found
             </p>
@@ -180,18 +180,18 @@ export default function OpportunitiesPage() {
           </div>
         )}
 
-        <div ref={cardsRef} className="space-y-4 pt-8 pb-12">
+        <div ref={cardsRef} className="space-y-3 pt-4 pb-8 md:space-y-4 md:pt-8 md:pb-12">
           {filtered.map((item) => (
             <div
               key={item.ref}
-              className="flex items-center justify-between border border-border/60 px-6 py-5 transition-colors hover:bg-muted/50"
+              className="flex flex-col border border-border/60 px-4 py-4 transition-colors hover:bg-muted/50 md:flex-row md:items-center md:justify-between md:px-6 md:py-5"
             >
               <div className="flex flex-col gap-1">
                 <span className="text-xs font-mono tracking-wider text-muted-foreground">
                   {item.ref}
                 </span>
-                <h3 className="text-lg font-medium text-foreground">{item.title}</h3>
-                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                <h3 className="text-base font-medium text-foreground md:text-lg">{item.title}</h3>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground md:gap-4 md:text-sm">
                   <span className="flex items-center gap-1.5">
                     <ReactCountryFlag
                       countryCode={item.country}
@@ -200,13 +200,13 @@ export default function OpportunitiesPage() {
                     />
                     {countryNameMap[item.country] ?? item.country}
                   </span>
-                  <span>·</span>
+                  <span className="hidden md:inline">·</span>
                   <span>{item.state}</span>
-                  <span>·</span>
+                  <span className="hidden md:inline">·</span>
                   <span>{item.sector}</span>
                 </div>
               </div>
-              <div className="shrink-0 pl-6 text-right">
+              <div className="mt-3 shrink-0 text-left md:mt-0 md:pl-6 md:text-right">
                 <span className="text-lg font-medium text-foreground">
                   {formatPrice(item.price)}
                 </span>
@@ -215,13 +215,13 @@ export default function OpportunitiesPage() {
           ))}
         </div>
 
-        <div className="border-t border-border/60 py-16 text-center">
-          <p className="font-serif text-2xl italic text-foreground">
+        <div className="border-t border-border/60 py-10 text-center md:py-16">
+          <p className="font-serif text-xl italic text-foreground md:text-2xl">
             Opportunity access begins with a confidential conversation, not a catalog.
           </p>
           <Link
             href="/about"
-            className="mt-8 inline-block bg-foreground px-6 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90"
+            className="mt-6 inline-block bg-foreground px-6 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90 md:mt-8"
           >
             Start a private discussion →
           </Link>

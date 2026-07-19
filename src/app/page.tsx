@@ -4,20 +4,20 @@ import { SiteLayout } from "@/components/site-layout";
 export default function HomePage() {
   return (
     <SiteLayout>
-      <section className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:px-10 md:pt-32 md:pb-32">
+      <section className="mx-auto max-w-6xl px-6 pt-12 pb-16 md:px-10 md:pt-32 md:pb-32">
         <div className="eyebrow">FORTEBETHEL{"\u00a0"}</div>
-        <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-[1.05] text-foreground whitespace-nowrap md:text-7xl">
+        <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-[1.05] text-foreground md:whitespace-nowrap md:text-7xl">
           Capital relocation for a <em className="text-accent">wider world.</em>
         </h1>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:mt-8 md:text-lg">
           A discreet advisory firm guiding internationally minded families, founders, and investors
           through capital relocation, global mobility, and access to worldwide investment
           opportunities — coordinated under Route183.
         </p>
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-8 flex flex-col gap-3 md:mt-10 md:flex-row md:flex-wrap md:gap-4">
           <Link
             href="/about"
-            className="inline-flex items-center bg-foreground px-6 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90"
+            className="inline-flex items-center justify-center bg-foreground px-6 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90"
           >
             Begin a private conversation
           </Link>
@@ -49,12 +49,14 @@ export default function HomePage() {
             <Link
               key={c.n}
               href={c.to}
-              className="group bg-background p-10 transition-colors hover:bg-secondary"
+              className="group bg-background p-6 transition-colors hover:bg-secondary md:p-10"
             >
               <div className="eyebrow">{c.n}</div>
-              <h3 className="mt-4 font-serif text-2xl text-foreground">{c.t}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.d}</p>
-              <div className="mt-6 text-xs uppercase tracking-[0.22em] text-accent">Explore →</div>
+              <h3 className="mt-3 font-serif text-xl text-foreground md:mt-4 md:text-2xl">{c.t}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:mt-3">{c.d}</p>
+              <div className="mt-4 text-xs uppercase tracking-[0.22em] text-accent md:mt-6">
+                Explore →
+              </div>
             </Link>
           ))}
         </div>

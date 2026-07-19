@@ -10,9 +10,10 @@ export default function HomePage() {
           Capital relocation for a <em className="text-accent">wider world.</em>
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:mt-8 md:text-lg">
-          A discreet advisory firm guiding internationally minded families, founders, and investors
-          through capital relocation, global mobility, and access to worldwide investment
-          opportunities — coordinated under Route183.
+          A discreet advisory firm guiding internationally minded families,
+          founders, and investors through capital relocation, global mobility,
+          and access to worldwide investment opportunities — coordinated under
+          Route183.
         </p>
         <div className="mt-8 flex flex-col gap-3 md:mt-10 md:flex-row md:flex-wrap md:gap-4">
           <Link
@@ -52,8 +53,12 @@ export default function HomePage() {
               className="group bg-background p-6 transition-colors hover:bg-secondary md:p-10"
             >
               <div className="eyebrow">{c.n}</div>
-              <h3 className="mt-3 font-serif text-xl text-foreground md:mt-4 md:text-2xl">{c.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:mt-3">{c.d}</p>
+              <h3 className="mt-3 font-serif text-xl text-foreground md:mt-4 md:text-2xl">
+                {c.t}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:mt-3">
+                {c.d}
+              </p>
               <div className="mt-4 text-xs uppercase tracking-[0.22em] text-accent md:mt-6">
                 Explore →
               </div>

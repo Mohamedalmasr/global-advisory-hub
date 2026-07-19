@@ -81,7 +81,8 @@ const SECTIONS = [
     title: "9. Access, Correction, and Updates",
     body: "You may contact us to request access to your basic file information, correct inaccurate information, or update your contact details.",
     items: null,
-    after: "We may ask you to verify your identity before making changes to your file.",
+    after:
+      "We may ask you to verify your identity before making changes to your file.",
   },
   {
     title: "10. Retention and Secure Storage of Information",
@@ -114,21 +115,26 @@ export default function PrivacyPage() {
       />
       <section className="mx-auto max-w-3xl space-y-8 px-6 pb-16 md:space-y-12 md:pb-20 md:px-10">
         <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-          This Privacy Policy explains what information we collect, how we use it, how we store it,
-          and how we may share it when assisting you with documentation, relocation, investment, or
-          related services.
+          This Privacy Policy explains what information we collect, how we use
+          it, how we store it, and how we may share it when assisting you with
+          documentation, relocation, investment, or related services.
         </p>
 
         {SECTIONS.map((s) => (
           <div key={s.title}>
-            <h2 className="font-serif text-xl text-foreground md:text-2xl">{s.title}</h2>
+            <h2 className="font-serif text-xl text-foreground md:text-2xl">
+              {s.title}
+            </h2>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground md:mt-4 md:text-lg">
               {s.body}
             </p>
             {s.items && (
               <ul className="mt-3 space-y-2 md:mt-4">
                 {s.items.map((item) => (
-                  <li key={item} className="flex gap-3 text-base text-muted-foreground md:text-lg">
+                  <li
+                    key={item}
+                    className="flex gap-3 text-base text-muted-foreground md:text-lg"
+                  >
                     <span className="mt-2 h-px w-4 flex-shrink-0 bg-accent" />
                     <span>{item}</span>
                   </li>
@@ -138,7 +144,10 @@ export default function PrivacyPage() {
             {s.after && (
               <div className="mt-3 space-y-3 md:mt-4 md:space-y-4">
                 {s.after.split("\n\n").map((para, i) => (
-                  <p key={i} className="text-base leading-relaxed text-muted-foreground md:text-lg">
+                  <p
+                    key={i}
+                    className="text-base leading-relaxed text-muted-foreground md:text-lg"
+                  >
                     {para.split("\n").map((line, j) => (
                       <span key={j}>
                         {j > 0 && <br />}
@@ -152,7 +161,9 @@ export default function PrivacyPage() {
           </div>
         ))}
 
-        <p className="pt-4 text-sm text-muted-foreground md:pt-6">Last updated: 2026-03-13</p>
+        <p className="pt-4 text-sm text-muted-foreground md:pt-6">
+          Last updated: 2026-03-13
+        </p>
       </section>
     </SiteLayout>
   );

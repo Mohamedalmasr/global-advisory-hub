@@ -11,7 +11,10 @@ export default function ContactPage() {
         intro="We work with a small number of families and founders at a time. If you would like to explore how ForteBethel can support your objectives, reach out directly."
       />
       <section className="mx-auto max-w-2xl space-y-10 px-6 pb-16 md:space-y-16 md:pb-24 md:px-10">
-        <form className="space-y-6 md:space-y-8" onSubmit={(e) => e.preventDefault()}>
+        <form
+          className="space-y-6 md:space-y-8"
+          onSubmit={(e) => e.preventDefault()}
+        >
           <div className="grid gap-6 md:grid-cols-2 md:gap-8">
             <div className="space-y-2">
               <label htmlFor="name" className="eyebrow">

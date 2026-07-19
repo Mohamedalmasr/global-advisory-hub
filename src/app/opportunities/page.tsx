@@ -172,7 +172,8 @@ export default function OpportunitiesPage() {
         {hasFilters && (
           <div className="flex items-center justify-between py-4 md:pb-8">
             <p className="text-sm text-muted-foreground">
-              {filtered.length} {filtered.length === 1 ? "opportunity" : "opportunities"} found
+              {filtered.length}{" "}
+              {filtered.length === 1 ? "opportunity" : "opportunities"} found
             </p>
             <Button variant="ghost" size="sm" onClick={resetFilters}>
               Reset filters
@@ -180,7 +181,10 @@ export default function OpportunitiesPage() {
           </div>
         )}
 
-        <div ref={cardsRef} className="space-y-3 pt-4 pb-8 md:space-y-4 md:pt-8 md:pb-12">
+        <div
+          ref={cardsRef}
+          className="space-y-3 pt-4 pb-8 md:space-y-4 md:pt-8 md:pb-12"
+        >
           {filtered.map((item) => (
             <Link
               key={item.ref}
@@ -191,7 +195,9 @@ export default function OpportunitiesPage() {
                 <span className="text-xs font-mono tracking-wider text-muted-foreground">
                   {item.ref}
                 </span>
-                <h3 className="text-base font-medium text-foreground md:text-lg">{item.title}</h3>
+                <h3 className="text-base font-medium text-foreground md:text-lg">
+                  {item.title}
+                </h3>
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground md:gap-4 md:text-sm">
                   <span className="flex items-center gap-1.5">
                     <ReactCountryFlag
@@ -218,7 +224,8 @@ export default function OpportunitiesPage() {
 
         <div className="border-t border-border/60 py-10 text-center md:py-16">
           <p className="font-serif text-xl italic text-foreground md:text-2xl">
-            Opportunity access begins with a confidential conversation, not a catalog.
+            Opportunity access begins with a confidential conversation, not a
+            catalog.
           </p>
           <Link
             href="/about"

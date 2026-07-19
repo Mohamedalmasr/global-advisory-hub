@@ -23,7 +23,11 @@ export function generateStaticParams() {
   return listings.map((item) => ({ ref: item.ref }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ ref: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ ref: string }>;
+}) {
   const { ref } = await params;
   const item = listings.find((l) => l.ref === ref);
   if (!item) return { title: "Opportunity Not Found" };
@@ -63,7 +67,9 @@ export default async function OpportunityDetailPage({
 
       <section className="mx-auto max-w-3xl px-6 pb-16 md:px-10 md:pb-24">
         <div className="border-t border-border/60 pt-8 md:pt-12">
-          <span className="text-xs font-mono tracking-wider text-muted-foreground">{item.ref}</span>
+          <span className="text-xs font-mono tracking-wider text-muted-foreground">
+            {item.ref}
+          </span>
 
           <h1 className="mt-3 font-serif text-3xl leading-tight text-foreground md:mt-4 md:text-5xl">
             {item.title}
@@ -71,7 +77,11 @@ export default async function OpportunityDetailPage({
 
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground md:mt-8 md:gap-6 md:text-base">
             <span className="flex items-center gap-2">
-              <ReactCountryFlag countryCode={item.country} svg style={{ width: 18, height: 13 }} />
+              <ReactCountryFlag
+                countryCode={item.country}
+                svg
+                style={{ width: 18, height: 13 }}
+              />
               {countryNameMap[item.country] ?? item.country}
             </span>
             <span className="text-border">·</span>
@@ -97,8 +107,9 @@ export default async function OpportunityDetailPage({
           <div className="mt-10 border-t border-border/60 pt-8 md:mt-12">
             <div className="eyebrow">Next Steps</div>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Access to this opportunity begins with a confidential conversation. To explore whether
-              this listing aligns with your objectives, reach out directly.
+              Access to this opportunity begins with a confidential
+              conversation. To explore whether this listing aligns with your
+              objectives, reach out directly.
             </p>
             <div className="mt-6 flex flex-col gap-3 md:flex-row md:gap-4">
               <Link

@@ -47,8 +47,12 @@ export default function ServicesPage() {
             >
               <div className="eyebrow pt-1 md:pt-2">{s.n}</div>
               <div>
-                <h2 className="font-serif text-2xl text-foreground md:text-3xl">{s.title}</h2>
-                <p className="mt-3 leading-relaxed text-muted-foreground md:mt-4">{s.body}</p>
+                <h2 className="font-serif text-2xl text-foreground md:text-3xl">
+                  {s.title}
+                </h2>
+                <p className="mt-3 leading-relaxed text-muted-foreground md:mt-4">
+                  {s.body}
+                </p>
               </div>
             </article>
           ))}

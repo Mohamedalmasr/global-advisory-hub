@@ -6,6 +6,8 @@ import type { Opportunity } from "@/types/opportunities";
 import listingsData from "@/data/opportunity-listings.json";
 import countriesData from "@/data/opportunities.json";
 
+export const dynamic = "force-dynamic";
+
 const listings = listingsData as Opportunity[];
 
 const countryNameMap: Record<string, string> = Object.fromEntries(

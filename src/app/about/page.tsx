@@ -33,7 +33,9 @@ export default function AboutPage() {
             {SERVES.map((s) => (
               <li key={s} className="flex gap-4 md:gap-5">
                 <span className="mt-2 h-px w-5 flex-shrink-0 bg-accent md:w-6" />
-                <span className="text-base leading-relaxed text-foreground md:text-lg">{s}</span>
+                <span className="text-base leading-relaxed text-foreground md:text-lg">
+                  {s}
+                </span>
               </li>
             ))}
           </ul>
@@ -42,10 +44,10 @@ export default function AboutPage() {
         <div>
           <div className="eyebrow">Our approach</div>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground md:mt-6 md:text-lg">
-            We bring structure, discretion, and clear decision-making to complex international
-            moves. Our work is coordinated from Panama, with an international outlook, and built on
-            a foundation of private, relationship-led advisory engagement — not transactional
-            consulting.
+            We bring structure, discretion, and clear decision-making to complex
+            international moves. Our work is coordinated from Panama, with an
+            international outlook, and built on a foundation of private,
+            relationship-led advisory engagement — not transactional consulting.
           </p>
         </div>
       </section>

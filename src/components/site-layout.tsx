@@ -28,7 +28,11 @@ export function SiteHeader() {
     <header className="border-b border-border/60">
       <div className="mx-auto flex max-w-6xl items-center justify-start gap-12 px-6 py-5 md:px-10">
         <Link href="/" className="group">
-          <img src="/logo.png" alt="ForteBethel" className="h-12 w-auto object-contain md:h-14" />
+          <img
+            src="/logo.png"
+            alt="ForteBethel"
+            className="h-12 w-auto object-contain md:h-14"
+          />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {NAV.filter((item) => item.to !== "/contact").map((item) => (
@@ -93,9 +97,14 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-6 py-10 md:px-10 md:py-12">
         <div className="grid gap-8 md:grid-cols-4 md:gap-10">
           <div>
-            <img src="/logo.png" alt="ForteBethel" className="h-10 w-auto object-contain" />
+            <img
+              src="/logo.png"
+              alt="ForteBethel"
+              className="h-10 w-auto object-contain"
+            />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
-              Capital relocation for a wider world. Private, relationship-led advisory.
+              Capital relocation for a wider world. Private, relationship-led
+              advisory.
             </p>
           </div>
           <div>
@@ -103,7 +112,10 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-2 text-sm">
               {NAV.map((item) => (
                 <li key={item.to}>
-                  <Link href={item.to} className="text-muted-foreground hover:text-foreground">
+                  <Link
+                    href={item.to}
+                    className="text-muted-foreground hover:text-foreground"
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -114,7 +126,10 @@ export function SiteFooter() {
             <div className="eyebrow">About us</div>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
+                <Link
+                  href="/privacy"
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   Privacy
                 </Link>
               </li>
@@ -130,7 +145,9 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border/60 pt-6 text-xs text-muted-foreground md:mt-12 md:flex-row md:items-center">
-          <span>© {new Date().getFullYear()} ForteBethel S.A. All rights reserved.</span>
+          <span>
+            © {new Date().getFullYear()} ForteBethel S.A. All rights reserved.
+          </span>
           <span>Discretion · Clarity · Direction</span>
         </div>
       </div>

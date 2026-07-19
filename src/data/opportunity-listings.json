@@ -1,0 +1,226 @@
+[
+  {
+    "ref": "FB-US-001",
+    "country": "US",
+    "state": "New York",
+    "sector": "Finance & Banking",
+    "title": "Regional Bank Acquisition — Tri-State Area",
+    "price": 45000000
+  },
+  {
+    "ref": "FB-US-002",
+    "country": "US",
+    "state": "Florida",
+    "sector": "Finance & Banking",
+    "title": "Private Wealth Management Platform",
+    "price": 12000000
+  },
+  {
+    "ref": "FB-CA-001",
+    "country": "CA",
+    "state": "Ontario",
+    "sector": "Finance & Banking",
+    "title": "Fintech Lending Portfolio — Ontario",
+    "price": 8500000
+  },
+  {
+    "ref": "FB-CA-002",
+    "country": "CA",
+    "state": "British Columbia",
+    "sector": "Finance & Banking",
+    "title": "Credit Union Expansion — Western Canada",
+    "price": 15000000
+  },
+  {
+    "ref": "FB-PA-001",
+    "country": "PA",
+    "state": "Panamá",
+    "sector": "Finance & Banking",
+    "title": "Offshore Banking License Opportunity",
+    "price": 22000000
+  },
+  {
+    "ref": "RE-US-001",
+    "country": "US",
+    "state": "Texas",
+    "sector": "Real Estate",
+    "title": "Multifamily Portfolio — Austin Metro",
+    "price": 32000000
+  },
+  {
+    "ref": "RE-US-002",
+    "country": "US",
+    "state": "California",
+    "sector": "Real Estate",
+    "title": "Mixed-Use Development — Los Angeles",
+    "price": 78000000
+  },
+  {
+    "ref": "RE-US-003",
+    "country": "US",
+    "state": "Colorado",
+    "sector": "Real Estate",
+    "title": "Mountain Resort Property — Aspen Area",
+    "price": 19500000
+  },
+  {
+    "ref": "RE-CA-001",
+    "country": "CA",
+    "state": "British Columbia",
+    "sector": "Real Estate",
+    "title": "Waterfront Condos — Vancouver",
+    "price": 41000000
+  },
+  {
+    "ref": "RE-CA-002",
+    "country": "CA",
+    "state": "Quebec",
+    "sector": "Real Estate",
+    "title": "Historic Building Restoration — Montreal",
+    "price": 9800000
+  },
+  {
+    "ref": "RE-PA-001",
+    "country": "PA",
+    "state": "Panamá",
+    "sector": "Real Estate",
+    "title": "Luxury Tower — Punta Pacífica",
+    "price": 28000000
+  },
+  {
+    "ref": "RE-PA-002",
+    "country": "PA",
+    "state": "Panamá Oeste",
+    "sector": "Real Estate",
+    "title": "Beachfront Resort Development — Playa Blanca",
+    "price": 15000000
+  },
+  {
+    "ref": "TE-US-001",
+    "country": "US",
+    "state": "California",
+    "sector": "Technology",
+    "title": "AI Startup Seed Round — Silicon Valley",
+    "price": 5000000
+  },
+  {
+    "ref": "TE-US-002",
+    "country": "US",
+    "state": "New York",
+    "sector": "Technology",
+    "title": "SaaS Enterprise Platform — Series B",
+    "price": 18000000
+  },
+  {
+    "ref": "TE-CA-001",
+    "country": "CA",
+    "state": "Ontario",
+    "sector": "Technology",
+    "title": "CleanTech Innovation Hub — Toronto",
+    "price": 7200000
+  },
+  {
+    "ref": "TE-CA-002",
+    "country": "CA",
+    "state": "Alberta",
+    "sector": "Technology",
+    "title": "AgriTech Platform — Prairie Expansion",
+    "price": 4500000
+  },
+  {
+    "ref": "TE-PA-001",
+    "country": "PA",
+    "state": "Panamá",
+    "sector": "Technology",
+    "title": "Logistics Tech Startup — Panamá City",
+    "price": 3200000
+  },
+  {
+    "ref": "EI-US-001",
+    "country": "US",
+    "state": "Texas",
+    "sector": "Energy & Infrastructure",
+    "title": "Solar Farm Portfolio — West Texas",
+    "price": 55000000
+  },
+  {
+    "ref": "EI-US-002",
+    "country": "US",
+    "state": "Louisiana",
+    "sector": "Energy & Infrastructure",
+    "title": "LNG Terminal Expansion — Gulf Coast",
+    "price": 120000000
+  },
+  {
+    "ref": "EI-CA-001",
+    "country": "CA",
+    "state": "Alberta",
+    "sector": "Energy & Infrastructure",
+    "title": "Hydrogen Production Facility — Alberta",
+    "price": 67000000
+  },
+  {
+    "ref": "EI-CA-002",
+    "country": "CA",
+    "state": "Saskatchewan",
+    "sector": "Energy & Infrastructure",
+    "title": "Wind Energy Farm — Prairie Region",
+    "price": 34000000
+  },
+  {
+    "ref": "EI-PA-001",
+    "country": "PA",
+    "state": "Chiriquí",
+    "sector": "Energy & Infrastructure",
+    "title": "Hydroelectric Power Plant — Chiriquí",
+    "price": 25000000
+  },
+  {
+    "ref": "AG-US-001",
+    "country": "US",
+    "state": "Iowa",
+    "sector": "Agriculture",
+    "title": "Farmland Portfolio — Midwest Corridor",
+    "price": 28000000
+  },
+  {
+    "ref": "AG-US-002",
+    "country": "US",
+    "state": "California",
+    "sector": "Agriculture",
+    "title": "Organic Vineyard Expansion — Napa Valley",
+    "price": 14000000
+  },
+  {
+    "ref": "AG-CA-001",
+    "country": "CA",
+    "state": "Saskatchewan",
+    "sector": "Agriculture",
+    "title": "Canola & Wheat Operations — Saskatchewan",
+    "price": 11000000
+  },
+  {
+    "ref": "AG-CA-002",
+    "country": "CA",
+    "state": "Manitoba",
+    "sector": "Agriculture",
+    "title": "Pulse Crop Export Business — Manitoba",
+    "price": 6500000
+  },
+  {
+    "ref": "AG-PA-001",
+    "country": "PA",
+    "state": "Chiriquí",
+    "sector": "Agriculture",
+    "title": "Banana Plantation & Export — Chiriquí",
+    "price": 4800000
+  },
+  {
+    "ref": "AG-PA-002",
+    "country": "PA",
+    "state": "Veraguas",
+    "sector": "Agriculture",
+    "title": "Sustainable Cacao Farm — Veraguas",
+    "price": 2200000
+  }
+]

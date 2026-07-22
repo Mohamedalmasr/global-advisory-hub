@@ -31,7 +31,7 @@ export function SiteHeader() {
           <img
             src="/logo.png"
             alt="ForteBethel"
-            className="h-12 w-auto object-contain md:h-14"
+            className="h-10 w-auto object-contain md:h-12"
           />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
@@ -100,7 +100,7 @@ export function SiteFooter() {
             <img
               src="/logo.png"
               alt="ForteBethel"
-              className="h-10 w-auto object-contain"
+              className="h-8 w-auto object-contain"
             />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
               Capital relocation for a wider world. Private, relationship-led

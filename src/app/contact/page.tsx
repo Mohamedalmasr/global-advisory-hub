@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { PageHeader, SiteLayout } from "@/components/site-layout";
+import { StaggerContainer, StaggerItem, SlideUp } from "@/components/motion";
 
 export default function ContactPage() {
   return (
@@ -15,57 +16,67 @@ export default function ContactPage() {
           className="space-y-6 md:space-y-8"
           onSubmit={(e) => e.preventDefault()}
         >
-          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
-            <div className="space-y-2">
-              <label htmlFor="name" className="eyebrow">
-                Name
-              </label>
-              <input
-                id="name"
-                type="text"
-                className="w-full border-b border-border/60 bg-transparent py-3 text-foreground outline-none transition-colors focus:border-accent"
-                placeholder="Your name"
-              />
-            </div>
-            <div className="space-y-2">
-              <label htmlFor="email" className="eyebrow">
-                Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                className="w-full border-b border-border/60 bg-transparent py-3 text-foreground outline-none transition-colors focus:border-accent"
-                placeholder="your@email.com"
-              />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <label htmlFor="message" className="eyebrow">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows={4}
-              className="w-full resize-none border-b border-border/60 bg-transparent py-3 text-foreground outline-none transition-colors focus:border-accent"
-              placeholder="How can we help?"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-foreground px-8 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90 md:w-auto"
-          >
-            Send message →
-          </button>
+          <StaggerContainer className="space-y-6 md:space-y-8" stagger={0.1}>
+            <StaggerItem>
+              <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+                <div className="space-y-2">
+                  <label htmlFor="name" className="eyebrow">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    className="w-full border-b border-border/60 bg-transparent py-3 text-foreground outline-none transition-colors focus:border-accent"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="email" className="eyebrow">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    className="w-full border-b border-border/60 bg-transparent py-3 text-foreground outline-none transition-colors focus:border-accent"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="space-y-2">
+                <label htmlFor="message" className="eyebrow">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  className="w-full resize-none border-b border-border/60 bg-transparent py-3 text-foreground outline-none transition-colors focus:border-accent"
+                  placeholder="How can we help?"
+                />
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <button
+                type="submit"
+                className="w-full bg-foreground px-8 py-3 text-sm tracking-wide text-background transition-opacity hover:opacity-90 md:w-auto"
+              >
+                Send message →
+              </button>
+            </StaggerItem>
+          </StaggerContainer>
         </form>
 
-        <div className="border-t border-border/60 pt-10 md:pt-12">
-          <div className="eyebrow">Office</div>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground md:mt-6 md:text-lg">
-            Panama City, Republic of Panama
-            <br />
-            By private appointment only
-          </p>
-        </div>
+        <SlideUp>
+          <div className="border-t border-border/60 pt-10 md:pt-12">
+            <div className="eyebrow">Office</div>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:mt-6 md:text-lg">
+              Panama City, Republic of Panama
+              <br />
+              By private appointment only
+            </p>
+          </div>
+        </SlideUp>
       </section>
     </SiteLayout>
   );
